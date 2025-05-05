@@ -1,0 +1,68 @@
+/* Basic styling and page padding*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 140%
+}
+
+.article-wrapper {
+    padding: 80px 20px;
+}
+
+.spacer {
+    margin-top: 40px;
+}
+
+body {
+    padding: 80px 20px;
+}
+
+/* Content Width */
+.article-content, .related-articles {
+    margin: auto;
+    max-width: 720px;
+}
+
+img, video {
+    width: 100%;
+}
+
+/* Typography */
+h1 {
+    font-size: 32px;
+    line-height: 120%;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 120%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Center align date */
+.article-date {
+    text-align: center;
+    color: grey;
+}
+
+/* Related articles */
+.related-articles {
+    margin-top: 40px;
+}

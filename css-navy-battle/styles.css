@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+html,
+body {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 16px;
+    background: rgba(10, 10, 10, 1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+.board {
+    border: 1px solid rgba(50, 50, 50, 1);
+    background: rgba(20, 20, 20, 1);
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative; /* Needed to add this here */
+}
+
+.cell {
+    border: 0.5px dashed rgba(50, 50, 50, 1);
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.target {
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background: rgb(87, 64, 236);
+    position: absolute;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+pre {
+    display: inline;
+}
+
+
+
+/* Coloca o teu CSS a partir daqui */
+.ball-0 {
+    right: 40px;
+    bottom: 160px;
+}
+
+.ball-1 {
+    left: 120px;
+    top: 0;
+}
+
+.ball-2 {
+    left: 120px;
+    top: 120px;
+}
+
+.ball-3 {
+    right: 40px;
+    top: 0px;
+}
+
+.ball-4 {
+    right: 0px;
+    top: 40px;
+}
+
+.ball-5 {
+    right: 80px;
+    top: 120px;
+}
+
+.ball-6 {
+    right: 80px;
+    top: 160px;
+}
+
+.ball-7 {
+    left: 40px;
+    top: 80px;
+}
+
+.ball-8 {
+    right: 0px;
+    bottom: 0px;
+}
+
+.ball-9 {
+    right: 120px;
+    bottom: 40px;
+}
+
