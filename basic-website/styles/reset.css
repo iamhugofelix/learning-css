@@ -111,6 +111,7 @@ section {
 
 body {
     line-height: 1;
+    -webkit-font-smoothing: antialiased;
 }
 
 ol,
@@ -134,4 +135,21 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+/* Typography enhancements */
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    }
+      
+p {
+text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+text-wrap: balance;
 }

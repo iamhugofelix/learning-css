@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
+    --text-primary: oklch(20.5% 0 0);
+    --text-secondary: oklch(20.5% 0 0);
+    --text-tertiary: oklch(70.9% 0.01 56.259);
+    --text-white: #fff;
+    --accent: #0004E8;
+
     --bg: #f7f7f7;
     --black: black;
     --black-3: #00000080;
@@ -8,7 +14,6 @@
     --black-2: #000c;
     --alt-bg: #ededed;
     --off-white: #f1f1f1;
-    --accent: #ea5d31;
     --alt-bg-2: #f0f0f0;
     --ultra-light-text: #777;
     --borders-dark-bg: #ffffff0d;
