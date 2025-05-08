@@ -15,8 +15,9 @@ body {
 }
 
 body {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .flag {
@@ -41,4 +42,166 @@ body {
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
+}
+
+/* Italy */
+.flag--italy {
+    display: flex;
+}
+
+.flag--italy .green {
+    background-color: green;
+    flex-grow: 1;
+}
+
+.flag--italy .white {
+    background-color: white;
+    flex-grow: 1;
+}
+
+.flag--italy .red {
+    background-color: red;
+    flex-grow: 1;
+}
+
+/* Ukraine */
+.flag--ukraine {
+    display: flex;
+    flex-direction: column;
+}
+
+.flag--ukraine .blue {
+    background-color: blue;
+    flex-grow: 1;
+}
+
+
+.flag--ukraine .yellow {
+    background-color: yellow;
+    flex-grow: 1;
+}
+
+/* Kuwait */
+.flag--kuwait {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+}
+
+.flag--kuwait .black {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    background-color: black;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 33%, 100% 66%, 0 100%);
+}
+
+.flag--kuwait .green {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background-color: green;
+}
+
+.flag--kuwait .red {
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    background-color: red;
+}
+
+/* Bangladesh */
+.flag--bangladesh {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: green;
+}
+
+.flag--bangladesh .green-circle {
+    grid-column: 3 / 7;
+    grid-row: 3 / 7;
+    background-color: red;
+    border-radius: 100%;
+}
+
+/* Portugal */
+.flag--portugal {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: red;
+}
+
+.flag--portugal .green {
+    grid-column: 1 / 5;
+    grid-row: 1 / -1;
+    background-color: green;
+}
+
+.flag--portugal .yellow-circle {
+    grid-column: 3 / 7;
+    grid-row: 3 / 7;
+    background-color: yellow;
+    border-radius: 100%;
+}
+
+/* Portugal */
+.flag--japan {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: white;
+}
+
+
+/* Japan */
+.flag--japan .red-circle {
+    grid-column: 4 / 8;
+    grid-row: 3 / 7;
+    background-color: red;
+    border-radius: 100%;
+}
+
+/* Greece */
+.flag--greece {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    background-color: blue;
+}
+
+.flag--greece .white-stripe-hor {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background-color: white;
+}
+
+.flag--greece .white-stripe-ver {
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+    background-color: white;
+}
+
+.flag--greece .stripe-1 {
+    grid-column: 4 / -1;
+    grid-row: 2 / 3;
+    background-color: white;
+}
+
+.flag--greece .stripe-2 {
+    grid-column: 4 / -1;
+    grid-row: 4 / 5;
+    background-color: white;
+}
+
+.flag--greece .stripe-3 {
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+    background-color: white;
+}
+
+.flag--greece .stripe-4 {
+    grid-column: 1 / -1;
+    grid-row: 8 / 9;
+    background-color: white;
 }
