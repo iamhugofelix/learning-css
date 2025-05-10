@@ -73,8 +73,17 @@ a {
 
 body {
     font-family: var(--font-family);
+    margin: auto;
 }
 
 img, picture, video, canvas, svg {
     display: block;
-    }   
+}   
+
+.width-large {
+    max-width: 1080px;
+}
+
+.width-xlarge {
+    max-width: 1440px;
+}
