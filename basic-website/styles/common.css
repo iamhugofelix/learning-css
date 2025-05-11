@@ -14,14 +14,14 @@
     --gray-800: #1f2937;
     --gray-900: #111827;
 
-    --accent-lightest: #dbeafe;
-    --accent-light: #93c5fd;
-    --accent-base: #2563eb;
-    --accent-dark: #1d4ed8;
-    --accent-darkest: #1e40af;
+    --accent-lightest: #f0f4fd;
+    --accent-light: #adc2f4;
+    --accent-base: #555cd6;
+    --accent-dark: #3b4098;
+    --accent-darkest: #3b4098;
 
-    --highlight-base: #f59e0b;
-    --highlight-dark: #d97706;
+    --highlight-base: #f3a82c;
+    --highlight-dark: #ec8714;
 
     --font-family: 'Inter', sans-serif;
 }
@@ -63,6 +63,25 @@ a {
     text-decoration: none;
 }
 
+/* Mobile Fonts */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
 
 
 /* Resets */
@@ -73,7 +92,6 @@ a {
 
 body {
     font-family: var(--font-family);
-    margin: auto;
 }
 
 img, picture, video, canvas, svg {

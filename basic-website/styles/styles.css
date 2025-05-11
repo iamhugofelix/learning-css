@@ -5,6 +5,8 @@
     border-radius: 10rem;
     color: var(--white);
     font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
 }
 
 .btn-primary:hover {
@@ -27,10 +29,12 @@
     border-radius: 10rem;
     color: var(--accent-base);
     font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
 }
 
 .btn-secondary:hover {
-    border: solid 1px var(--accent-lightest);
+    border: solid 1px var(--accent-base);
     background-color: var(--accent-lightest);
 }
 
@@ -48,6 +52,7 @@
 .link {
     font-size: 1rem;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .link-primary {
@@ -93,14 +98,51 @@
     margin: auto;
 }
 
-.nav-bar img {
+.nav-bar .logo {
     max-height: 2rem;
+    cursor: pointer;
 }
 
-.nav-bar .menu, .actions {
+.menu ul, .actions ul {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
+
+/* Mobile Menu */
+.menu-icon {
+    display: none;
+}
+
+.nav-bar .mobile-logo {
+    max-height: 2rem;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+    .menu-icon {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .actions ul li:first-child {
+        display: none;
+    }
+
+    .nav-bar .logo {
+        display: none;
+    }
+
+    .nav-bar .mobile-logo {
+        display: flex;
+    }
+}
+
 
 /* Hero Section */
 .hero {
@@ -119,6 +161,12 @@
     color: var(--gray-700);
 }
 
+@media screen and (max-width:768px) {
+    .headline .chip {
+        display: none;
+    }
+}
+
 .headline p{
     font-size: 1rem;
 }
@@ -126,6 +174,18 @@
 .hero h1 {
     text-align: center;
     color: var(--gray-900);
+}
+
+.hero .sub-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--gray-600);
+}
+@media screen and (max-width:768px) {
+    .hero .sub-heading {
+        font-size: 1.25rem;
+    }
 }
 
 .hero .actions {
@@ -143,11 +203,12 @@
 
 /* Feature Cards */
 .features {
-    margin: 1.5rem 1.5rem;
+    margin: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin: auto;
+    padding: 1.5rem;
 }
 
 .feature-card {
@@ -155,13 +216,18 @@
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
-    background-color: var(--gray-50);
+    background-color: var(--accent-lightest);
     padding: 2rem;
     border-radius: 1rem;
     position: sticky;
     top: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+    .feature-card {
+        flex-direction: column;
+    }
+}
 
 .feature-content {
     display: flex;
@@ -172,7 +238,6 @@
 
 .feature-content p {
     color: var(--gray-600);
-    margin-top: 0.5rem;
     font-size: 1.135rem;
     font-weight: 400;
 }
@@ -196,18 +261,13 @@
     flex-direction: column;
     gap: 4rem;
     padding: 4rem 2.5rem;
-    position: sticky;
-    top: 0rem;
-    z-index: 0;
     margin: auto;
 }
 
 .footer-links {
-    display: flex;
-    gap: 2rem;
-    position: sticky;
-    top: 0rem;
-    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
 
 .footer-links > * {
@@ -215,6 +275,7 @@
     flex-direction: column;
     gap: 1.5rem;
     flex: 1;
+    margin-bottom: 2rem;
 }
 
 .footer-links ul {
@@ -224,13 +285,54 @@
     color: var(--gray-500);
 }
 
+.footer-product {
+    grid-column: 1 / 2;
+}
+.footer-company {
+    grid-column: 2 / 3;
+}
+.footer-resources {
+    grid-column: 3 / 4;
+}
+.footer-legal {
+    grid-column: 4 / -1;
+}
+
+@media screen and (max-width:768px) {
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    .footer-product {
+        grid-column: 1 / 2;
+    }
+    .footer-company {
+        grid-column: 2 / -1;
+    }
+    .footer-resources {
+        grid-column: 2 / 2;
+    }
+    .footer-legal {
+        grid-column: 2 / -1;
+    }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+}
+}
+
+
 .sub-footer {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
     border-top: solid 1px var(--gray-200);
 }
-
 
 .sub-footer ul {
     display: flex;
@@ -241,4 +343,13 @@
     color: var(--gray-500);
     font-size: 0.875rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .sub-footer {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
 }
